@@ -1,7 +1,6 @@
 import requests as r
 import time as t
 
-from requests.models import Response
 flag = 0
 
 def get(url,name):
