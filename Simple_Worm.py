@@ -17,6 +17,7 @@ def get(url,name):
             t.sleep(1)
             get(url,name)
         else:
+            flag = 0
             print("We are in trouble!Please try again!")
         
 def wri(name):
@@ -26,7 +27,6 @@ def wri(name):
             r.write(temp._content)
         print("Success!")
     except:
-        flag = 0
         print("An error occured when trying to create a document!")
     
 if __name__ == "__main__":
