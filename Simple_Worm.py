@@ -26,11 +26,11 @@ def wri(name):
             r.write(temp._content)
         print("Success!")
     except:
+        flag = 0
         print("An error occured when trying to create a document!")
     
 if __name__ == "__main__":
     while True:
-        flag = 0
         url = input("Your url:")
         name = input("File name:")
         get(url,name)
